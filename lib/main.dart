@@ -14,21 +14,25 @@ import 'package:hello_flutter/custom_scroll_view_4.dart';
 import 'package:hello_flutter/debug.dart';
 import 'package:hello_flutter/decorated_box.dart';
 import 'package:hello_flutter/dialog.dart';
+import 'package:hello_flutter/event_bus.dart';
 import 'package:hello_flutter/exception_catch.dart';
 import 'package:hello_flutter/fitted_box.dart';
 import 'package:hello_flutter/flex_layout.dart';
 import 'package:hello_flutter/flow_layout.dart';
 import 'package:hello_flutter/form_basic.dart';
+import 'package:hello_flutter/gesture_detector.dart';
 import 'package:hello_flutter/grid_view.dart';
 import 'package:hello_flutter/inherited_widget.dart';
 import 'package:hello_flutter/linear_layout.dart';
 import 'package:hello_flutter/list_view.dart';
 import 'package:hello_flutter/nested_scroll_view.dart';
 import 'package:hello_flutter/nested_tab_bar_view.dart';
+import 'package:hello_flutter/notification.dart';
 import 'package:hello_flutter/package_manage.dart';
 import 'package:hello_flutter/padding.dart';
 import 'package:hello_flutter/page_view.dart';
 import 'package:hello_flutter/page_view_keep_alive.dart';
+import 'package:hello_flutter/pointer_events.dart';
 import 'package:hello_flutter/progress.dart';
 import 'package:hello_flutter/provider.dart';
 import 'package:hello_flutter/responsive_layout.dart';
@@ -133,6 +137,10 @@ class Home extends StatelessWidget {
     Route(const FutureBuilderPage(), '功能组件 - 异步UI更新 - FutureBuilder'),
     Route(const StreamBuilderPage(), '功能组件 - 异步UI更新 - StreamBuilder'),
     Route(const DialogPage(), '功能组件 - 对话框'),
+    Route(const PointerEventsPage(), '事件和通知 - 光标事件'),
+    Route(const GestureDetectorPage(), '事件和通知 - 手势识别'),
+    Route(const EventBusPage(), '事件和通知 - 事件总线'),
+    Route(const NotificationPage(), '事件和通知 - 通知'),
   };
 
   @override
