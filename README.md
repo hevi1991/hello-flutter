@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-Author Learn it from https://book.flutterchina.club/chapter7/willpopscope.html
+Author Learn it from https://book.flutterchina.club/
 
 ## Getting Started
 
