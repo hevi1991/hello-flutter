@@ -64,6 +64,7 @@ class _NotificationPageState extends State<NotificationPage> {
             itemBuilder: (BuildContext context, int index) {
               return ListTile(
                 title: Text(items[index]),
+                trailing: const Icon(Icons.add_outlined),
                 onTap: () {
                   MyNotification('msg', index).dispatch(context);
                 },

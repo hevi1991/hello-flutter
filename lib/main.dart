@@ -1,4 +1,5 @@
 import 'package:hello_flutter/animated_list.dart';
+import 'package:hello_flutter/animation.dart';
 import 'package:hello_flutter/assets_manage.dart';
 import 'package:hello_flutter/async_builder_future_builder.dart';
 import 'package:hello_flutter/async_builder_stream_builder.dart';
@@ -11,6 +12,7 @@ import 'package:hello_flutter/custom_scroll_view.dart';
 import 'package:hello_flutter/custom_scroll_view_2.dart';
 import 'package:hello_flutter/custom_scroll_view_3.dart';
 import 'package:hello_flutter/custom_scroll_view_4.dart';
+import 'package:hello_flutter/custom_transition_route.dart';
 import 'package:hello_flutter/debug.dart';
 import 'package:hello_flutter/decorated_box.dart';
 import 'package:hello_flutter/dialog.dart';
@@ -141,6 +143,8 @@ class Home extends StatelessWidget {
     Route(const GestureDetectorPage(), '事件和通知 - 手势识别'),
     Route(const EventBusPage(), '事件和通知 - 事件总线'),
     Route(const NotificationPage(), '事件和通知 - 通知'),
+    Route(const AnimationPage(), '动画 - 基本'),
+    Route(const CustomTransitionRoutePage(), '动画 - 自定义路由转场'),
   };
 
   @override
