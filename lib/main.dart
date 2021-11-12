@@ -1,4 +1,5 @@
 import 'package:hello_flutter/animated_list.dart';
+import 'package:hello_flutter/animated_switcher.dart';
 import 'package:hello_flutter/animation.dart';
 import 'package:hello_flutter/assets_manage.dart';
 import 'package:hello_flutter/async_builder_future_builder.dart';
@@ -39,6 +40,7 @@ import 'package:hello_flutter/progress.dart';
 import 'package:hello_flutter/provider.dart';
 import 'package:hello_flutter/responsive_layout.dart';
 import 'package:hello_flutter/route_manage.dart';
+import 'package:hello_flutter/interwine_animation.dart';
 import 'package:hello_flutter/scaffold.dart';
 import 'package:hello_flutter/scroll_controller.dart';
 import 'package:hello_flutter/scroll_notification_listener.dart';
@@ -145,6 +147,8 @@ class Home extends StatelessWidget {
     Route(const NotificationPage(), '事件和通知 - 通知'),
     Route(const AnimationPage(), '动画 - 基本'),
     Route(const CustomTransitionRoutePage(), '动画 - 自定义路由转场'),
+    Route(const InterwineAnimationPage(), '动画 - 交织动画'),
+    Route(const AnimatedSwitcherPage(), '动画 - 动画切换'),
   };
 
   @override
