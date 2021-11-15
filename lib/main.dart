@@ -9,6 +9,8 @@ import 'package:hello_flutter/clip.dart';
 import 'package:hello_flutter/color.dart';
 import 'package:hello_flutter/component_basic.dart';
 import 'package:hello_flutter/container.dart';
+import 'package:hello_flutter/custom_components.dart';
+import 'package:hello_flutter/custom_paint_with_canvas.dart';
 import 'package:hello_flutter/custom_scroll_view.dart';
 import 'package:hello_flutter/custom_scroll_view_2.dart';
 import 'package:hello_flutter/custom_scroll_view_3.dart';
@@ -149,6 +151,8 @@ class Home extends StatelessWidget {
     Route(const CustomTransitionRoutePage(), '动画 - 自定义路由转场'),
     Route(const InterwineAnimationPage(), '动画 - 交织动画'),
     Route(const AnimatedSwitcherPage(), '动画 - 动画切换'),
+    Route(const CustomComponentsPage(), '自定义组件 - 组合现有组件'),
+    Route(const CustomPaintWithCanvasPage(), '自定义组件 - 自定义绘制'),
   };
 
   @override
