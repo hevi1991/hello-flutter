@@ -19,15 +19,20 @@ import 'package:hello_flutter/custom_transition_route.dart';
 import 'package:hello_flutter/debug.dart';
 import 'package:hello_flutter/decorated_box.dart';
 import 'package:hello_flutter/dialog.dart';
+import 'package:hello_flutter/dio.dart';
+import 'package:hello_flutter/dio_multi_block_download.dart';
 import 'package:hello_flutter/event_bus.dart';
 import 'package:hello_flutter/exception_catch.dart';
+import 'package:hello_flutter/file_operation.dart';
 import 'package:hello_flutter/fitted_box.dart';
 import 'package:hello_flutter/flex_layout.dart';
 import 'package:hello_flutter/flow_layout.dart';
 import 'package:hello_flutter/form_basic.dart';
 import 'package:hello_flutter/gesture_detector.dart';
 import 'package:hello_flutter/grid_view.dart';
+import 'package:hello_flutter/http_client.dart';
 import 'package:hello_flutter/inherited_widget.dart';
+import 'package:hello_flutter/json_to_dart_model.dart';
 import 'package:hello_flutter/linear_layout.dart';
 import 'package:hello_flutter/list_view.dart';
 import 'package:hello_flutter/nested_scroll_view.dart';
@@ -47,6 +52,7 @@ import 'package:hello_flutter/scaffold.dart';
 import 'package:hello_flutter/scroll_controller.dart';
 import 'package:hello_flutter/scroll_notification_listener.dart';
 import 'package:hello_flutter/single_child_scroll_view.dart';
+import 'package:hello_flutter/socket_api.dart';
 import 'package:hello_flutter/stack_layout.dart';
 import 'package:hello_flutter/state_manage.dart';
 import 'package:flutter/material.dart';
@@ -58,6 +64,7 @@ import 'package:hello_flutter/text_field.dart';
 import 'package:hello_flutter/theme.dart';
 import 'package:hello_flutter/transform.dart';
 import 'package:hello_flutter/value_listenable_builder.dart';
+import 'package:hello_flutter/websockets.dart';
 import 'package:hello_flutter/will_pop_scope.dart';
 
 void main() {
@@ -153,6 +160,13 @@ class Home extends StatelessWidget {
     Route(const AnimatedSwitcherPage(), '动画 - 动画切换'),
     Route(const CustomComponentsPage(), '自定义组件 - 组合现有组件'),
     Route(const CustomPaintWithCanvasPage(), '自定义组件 - 自定义绘制'),
+    Route(const FileOperationPage(), '文件操作'),
+    Route(const HttpClientPage(), '网络请求 - HttpClient'),
+    Route(DioPage(), '网络请求 - Dio'),
+    Route(const DioMultiBlockDownloadPage(), '网络请求 - Dio - 分块下载'),
+    Route(const WebSocketsPage(), '网络请求 - WebSocket'),
+    Route(const SocketAPIPage(), 'Socket接口使用'),
+    Route(const JSON2DartModelPage(), 'Json转Dart Model类'),
   };
 
   @override
