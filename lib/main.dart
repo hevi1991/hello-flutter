@@ -1,3 +1,4 @@
+import 'package:hello_flutter/about_element.dart';
 import 'package:hello_flutter/animated_list.dart';
 import 'package:hello_flutter/animated_switcher.dart';
 import 'package:hello_flutter/animation.dart';
@@ -167,6 +168,7 @@ class Home extends StatelessWidget {
     Route(const WebSocketsPage(), '网络请求 - WebSocket'),
     Route(const SocketAPIPage(), 'Socket接口使用'),
     Route(const JSON2DartModelPage(), 'Json转Dart Model类'),
+    Route(const AboutElementPage(), '核心原理 - Element'),
   };
 
   @override
